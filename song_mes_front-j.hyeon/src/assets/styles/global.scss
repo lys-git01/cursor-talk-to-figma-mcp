@@ -1,0 +1,21 @@
+// @use './reset';
+@use "./fonts";
+@use "./variables";
+@use "./print";
+@use "./primereact";
+@use "./common";
+@use "./styleGuide";
+// 각 폴더당 한번만 호출
+@use "./0-main/main";
+@use "./2-SA/_SA.scss";
+@use "./7-BM/_BM.scss";
+@use "./Dialog/Dialogcom";
+
+* {
+  // font-family: 'Noto Sans', 'Noto Sans KR', sans-serif;
+  font-family: var(--font-family);
+}
+
+html {
+  font-size: 14px;
+}

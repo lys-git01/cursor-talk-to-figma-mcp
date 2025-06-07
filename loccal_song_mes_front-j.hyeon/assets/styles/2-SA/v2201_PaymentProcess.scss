@@ -1,0 +1,138 @@
+#SAContainer {
+  .p-tabview {
+    height: 100%;
+  }
+  .p-tabview-panels {
+    height: calc(100% - 3.6rem);
+    overflow-y: auto;
+  }
+}
+div.PaymentProcessForm2201 {
+  .p-dialog-content {
+    padding: 1.5rem;
+  }
+
+  .payment-form {
+    .form-row {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+
+      .form-group {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        label {
+          font-weight: 500;
+          color: var(--gray-700);
+        }
+
+        .p-inputtext,
+        .p-dropdown,
+        .p-calendar {
+          width: 100%;
+        }
+
+        .p-inputgroup {
+          display: flex;
+
+          .p-inputtext {
+            border-right: none;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+          }
+
+          .p-button {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+          }
+
+          .p-button-sch {
+            width: 16%;
+          }
+        }
+
+        .p-dropdown-label {
+          padding: 0.5rem;
+        }
+
+        .p-calendar {
+          .p-inputtext {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .detail-form {
+      padding: 1rem;
+      background-color: #f4f4f4;
+      border-radius: 0.375rem;
+      margin-top: 1rem;
+
+      .form-row {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 1rem;
+
+        .form-group {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 1rem;
+          width: 100%;
+
+          label {
+            min-width: 100px;
+            font-weight: 500;
+            color: var(--gray-700);
+          }
+
+          .p-dropdown,
+          .p-calendar,
+          .p-inputtext,
+          .p-inputgroup,
+          .p-inputnumber {
+            width: 100%;
+            flex: 1;
+          }
+
+          .payment-date-form {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            width: 100%;
+
+            .p-calendar {
+              width: 71%;
+            }
+          }
+        }
+
+        // 관리번호와 금융기관 입력 필드만 50% 너비 적용
+        &.half-width-row {
+          width: 49%;
+
+          .p-button-sch {
+            width: 19%;
+          }
+        }
+      }
+    }
+
+    .dialog-footer {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.5rem;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--gray-200);
+
+      .p-button {
+        min-width: 5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+// 임시 Login.scss
+#Login {
+  background-color: var(--gray-100);
+  .input-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.438rem;
+    label {
+      color: var(--text-color);
+      font-size: 0.875rem;
+    }
+  }
+  .Login {
+    &__loc {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+
+      .userId__loc {
+        display: flex;
+        align-items: center;
+        gap: 0.625rem;
+      }
+    }
+    &__sec {
+      background-color: var(--surface-0);
+      padding: 1.25rem;
+      width: 25rem;
+      border: 0.063rem solid var(--gray-300);
+      border-radius: 0.375rem;
+    }
+
+    &-input-w {
+      .p-icon-field,
+      .p-password-input {
+        width: 100%;
+      }
+    }
+  }
+  .btns__sec {
+    display: flex;
+    flex-direction: column;
+    gap: 0.313rem;
+  }
+}
+// 임시 ChangePW.scss
+#ChangePW {
+  background-color: var(--gray-100);
+  .input-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.438rem;
+    label {
+      color: var(--text-color);
+      font-size: 0.875rem;
+    }
+  }
+  .ChangePW {
+    &__loc {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+
+      .ChangePW__loc {
+        display: flex;
+        align-items: center;
+        gap: 0.625rem;
+      }
+    }
+    &__sec {
+      background-color: var(--surface-0);
+      padding: 1.25rem;
+      width: 25rem;
+      border: 0.063rem solid var(--gray-300);
+      border-radius: 0.375rem;
+    }
+  }
+  .p-inputtext {
+    width: 100%;
+  }
+  .btns__sec {
+    display: flex;
+    gap: 0.313rem;
+    button {
+      width: 100%;
+    }
+  }
+}

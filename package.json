@@ -23,12 +23,11 @@
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "bun-types": "^1.2.5",
-    "tsup": "^8.4.0",
-    "typescript": "^5.0.0"
+    "bun-types": "^1.2.5"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "latest",
+    "primereact": "^10.9.5",
     "uuid": "latest",
     "ws": "latest",
     "zod": "latest"

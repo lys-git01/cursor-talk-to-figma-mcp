@@ -1,0 +1,13 @@
+.customer-code-label {
+  word-break: auto-phrase;
+}
+
+#SAContainer.PaymentStatusPage {
+  .p-tabview-panels {
+    height: calc(77.7vh - 3.6rem);
+    overflow: hidden;
+  }
+  .payment-status-con {
+    height: calc(77.7vh - 3.6rem);
+  }
+}

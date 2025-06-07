@@ -1,0 +1,190 @@
+.detail-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+
+  .detail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .detail-row {
+    display: flex;
+    gap: 1rem;
+
+    .detail-item {
+      flex: 1;
+      display: flex;
+      min-height: 2rem;
+      border: 1px solid #dee2e6;
+      background-color: white;
+
+      .detail-label {
+        min-width: 100px;
+        padding: 0.5rem;
+        background-color: #f1f3f5;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+      }
+
+      .detail-value {
+        flex: 1;
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+
+        &.text-right {
+          justify-content: flex-end;
+        }
+      }
+    }
+
+    &:last-child .detail-item {
+      flex: 2;
+    }
+  }
+}
+
+.CollectHistoryForm2208 {
+  .Dialog-container {
+    padding: 1rem;
+
+    .form-list {
+      margin-bottom: 1rem;
+
+      .form__input {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+
+        > div {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          p {
+            min-width: 80px;
+            font-weight: 500;
+          }
+
+          span {
+            flex: 1;
+            padding: 0.5rem;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+
+            &.text-right {
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+
+    .writing-criteria {
+      margin: 1rem 0;
+      padding: 1rem;
+      background-color: #f8f9fa;
+      border-radius: 4px;
+
+      p {
+        min-width: 80px;
+        font-weight: 500;
+      }
+    }
+
+    .form__input {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      gap: 0.5rem;
+
+      p {
+        min-width: 80px;
+        font-weight: 500;
+      }
+
+      .p-calendar,
+      .p-inputtext {
+        flex: 1;
+      }
+
+      &.writing-criteria {
+        align-items: flex-start;
+      }
+    }
+  }
+
+  .Dialog__btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-top: 1px solid #dee2e6;
+  }
+}
+
+div.BouncedNoteTab {
+  width: 100%;
+  background-color: white;
+
+  .p-tabmenu-nav a {
+    justify-content: center;
+  }
+
+  li {
+    flex: 1;
+  }
+
+  .big-tabmenu {
+    flex: 0.4;
+
+    .p-tabmenu-nav {
+      height: 100%;
+    }
+  }
+
+  .last-tabmenu {
+    flex: 1;
+
+    li {
+      flex: 0.4;
+    }
+
+    .p-tabmenu-nav {
+      height: 100%;
+    }
+  }
+
+  .small-tabmenu {
+    flex: 0.2;
+
+    li {
+      flex: 1;
+    }
+
+    .selected-tabmenu {
+      .p-tabmenu-nav {
+        border-bottom: none;
+
+        li {
+          width: 100%;
+          padding: 0.5rem;
+        }
+
+        input {
+          background-color: aliceblue;
+          border-bottom: none;
+          border-radius: 6px;
+          padding: 1rem;
+          border: none;
+          width: 26rem;
+        }
+      }
+    }
+  }
+}

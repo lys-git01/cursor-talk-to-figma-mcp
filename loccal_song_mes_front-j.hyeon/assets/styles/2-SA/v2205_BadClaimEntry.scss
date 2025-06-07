@@ -1,0 +1,107 @@
+.right-con {
+  .causeAndContent {
+    height: 12rem;
+    overflow-y: scroll;
+  }
+  .preventiveMeasure {
+    height: 7rem;
+    overflow-y: scroll;
+  }
+}
+
+.BadClaimEntryForm {
+  max-width: 62.5rem;
+  margin: 0 auto;
+
+  .p-card {
+    padding: 1rem;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  .form-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .column2 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+
+    > div {
+      flex: 0 0 auto;
+      width: 25rem;
+    }
+  }
+
+  .form__input {
+    p {
+      margin-bottom: 0.3rem;
+      font-weight: 500;
+      color: var(--gray-700);
+    }
+
+    .p-inputtext,
+    .p-dropdown {
+      width: 100%;
+    }
+
+    .p-calendar {
+      width: 100%;
+      flex: 1;
+    }
+
+    .calendar-checkbox-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .p-calendar {
+        min-width: 12.5rem;
+      }
+
+      .checkbox-wrapper {
+        display: flex;
+        align-items: center;
+        min-width: 5rem;
+        white-space: nowrap;
+      }
+    }
+
+    .p-inputtextarea {
+      width: 100%;
+      min-height: 9.375rem;
+    }
+
+    .p-error {
+      color: var(--red-500);
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+      display: block;
+    }
+
+    .p-dropdown-label {
+      padding: 0.5rem;
+    }
+
+    .p-dropdown.p-inputwrapper .p-inputtext {
+      line-height: 1.7;
+    }
+  }
+
+  .Dialog__btns {
+    margin-top: 2rem;
+    padding-right: 1rem;
+
+    .p-button {
+      min-width: 5rem;
+      height: 2.375rem;
+    }
+  }
+}

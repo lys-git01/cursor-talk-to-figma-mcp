@@ -1,0 +1,28 @@
+const WebSocket = require('ws');
+
+// WebSocket 서버 주소
+const ws = new WebSocket('ws://localhost:3055');
+
+// 서버 연결 후 명령 전송
+ws.on('open', function open() {
+  console.log('✅ 연결 성공: 명령 전송 중...');
+
+  const command = {
+    type: 'command_from_cursor',
+    channel: 'default',
+    id: 'test-color-change',
+    command: 'set_fill_color',
+    params: {
+      nodeId: '15:3', // 실제 Figma nodeId로 변경 필요
+      color: { r: 0, g: 0.8, b: 1, a: 1 }
+    }
+  };
+
+  ws.send(JSON.stringify(command));
+  console.log('✅ 명령 전송 완료:', command);
+  ws.close();
+});
+
+ws.on('error', function error(err) {
+  console.error('❌ 연결 오류:', err.message);
+});

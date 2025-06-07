@@ -1,0 +1,29 @@
+#UserEntry {
+  .UserEntry-con {
+    display: flex;
+    .datatable {
+      width: 43.75rem;
+    }
+    .detail {
+      width: calc(100% - 44.375rem);
+      margin-top: 0.625rem;
+      margin-left: 0.625rem;
+    }
+  }
+  .p-tabview {
+    height: 100%;
+    .p-tabview-panels {
+      height: calc(100% - 3.6rem);
+    }
+  }
+  .TabStyle2 {
+    .p-tabview-panels {
+      height: auto;
+    }
+    .tab1-1__btn {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 0.625rem;
+    }
+  }
+}

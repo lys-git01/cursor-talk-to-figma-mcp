@@ -1,0 +1,19 @@
+#LaminateCode {
+  .p-tabview-panels {
+    border-radius: 0.375rem;
+  }
+  .content-box {
+    height: calc(100vh - 13.5rem);
+  }
+  .datatable {
+    display: flex;
+    gap: 0.625rem;
+    height: 100%;
+    > div {
+      width: calc(33.33% - 0.438rem);
+    }
+    .datatable__body {
+      height: calc(100% - 4rem);
+    }
+  }
+}

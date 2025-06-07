@@ -1,0 +1,164 @@
+.Dialog__btns {
+  display: flex;
+  gap: 0.313rem;
+  justify-content: flex-end;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 0;
+  width: calc(100% - 3rem);
+  background-color: #fff;
+  padding: 0.625rem 0;
+}
+.Dialog-container {
+  margin-bottom: 2.375rem;
+}
+// 임시 DialogUsers
+.DialogUsers {
+  max-height: 60vh;
+  &-search {
+    margin-top: 0.625rem;
+    display: flex;
+    gap: 0.625rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-table {
+    overflow: auto;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+  }
+}
+// 임시 DialogClients
+.DialogClients {
+  max-height: 60vh;
+  &-search {
+    display: flex;
+    gap: 0.625rem;
+    justify-content: space-between;
+    align-items: center;
+
+    .search-bar {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .search-label {
+      font-weight: 600;
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &-table {
+    height: 18.75rem;
+  }
+}
+.AddCreditEntry7102 {
+  max-width: 62.5rem;
+  .column2 > div:first-child {
+    width: 43%;
+  }
+
+  .PaperPriceEntry7209 {
+    max-width: 62.5rem;
+  }
+}
+.DGBillingCode {
+  min-height: 55vh;
+
+  &-search {
+    margin-top: 0.625rem;
+    display: flex;
+    gap: 0.625rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-table {
+    overflow: auto;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+  }
+}
+
+.DGMachineList {
+  min-height: 55vh;
+  min-width: 18.75rem;
+  &-info {
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+    margin: 0.625rem 0;
+    span {
+      background-color: var(--gray-100);
+    }
+  }
+}
+.DGProcessCode {
+  &-info {
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+    margin: 0.625rem 0;
+    div {
+      display: flex;
+      gap: 0.313rem;
+      &:first-child {
+        width: 6rem;
+      }
+      &:last-child {
+        width: calc(100% - 6rem);
+      }
+      p {
+        font-weight: 600;
+      }
+      span {
+        background-color: var(--gray-100);
+      }
+    }
+  }
+  &-search {
+    display: flex;
+    gap: 0.625rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.625rem;
+    .p-button {
+      flex-shrink: 0;
+    }
+  }
+}
+
+.DGItemCodeList {
+  &-search {
+    display: flex;
+    gap: 0.625rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-table {
+    height: 18.75rem;
+  }
+}
+.BulkClientMgrForm7303 .p-datatable {
+  max-height: 300px;
+}
+.DGClientInfo {
+  .left-container {
+    flex: 0.45;
+  }
+  .right-container {
+    flex: 0.7;
+
+    div.form__input {
+      align-items: flex-start;
+
+      p {
+        text-align: center;
+        margin-top: 1rem;
+      }
+    }
+  }
+}

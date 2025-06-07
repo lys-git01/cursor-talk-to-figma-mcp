@@ -1,0 +1,23 @@
+#PaperPriceEntry {
+  .PaperPriceEntry-con {
+    display: flex;
+    .datatable {
+      width: calc(100% - 25rem);
+    }
+    .detail {
+      width: 25.625rem;
+      margin-top: 0.625rem;
+      margin-left: 0.625rem;
+    }
+    .extension-num > div {
+      display: flex;
+      gap: 0.625rem;
+      &:nth-child(2) p {
+        min-width: auto;
+      }
+    }
+  }
+  .p-tabview {
+    height: 100%;
+  }
+}

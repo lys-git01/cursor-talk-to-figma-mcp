@@ -1,0 +1,522 @@
+@use "./v7101_AuthEntry";
+@use "./v7104_UserEntry";
+@use "./v7102_CreditEntry";
+@use "./v7201_LaminateCode";
+@use "./v7202_ProcessCodeEntry";
+@use "./v7209_PaperPriceEntry";
+@use "./v7408_ClosingDate.scss";
+
+// 임시 v7203_BillingCodeEntry
+#BillingCodeEntry {
+  .BillingCodeEntry-con {
+    display: flex;
+    height: calc(100vh - 9.6rem);
+  }
+  .detail .con-body__data p {
+    min-width: 12rem;
+  }
+}
+.BillingCodeForm7203 {
+  .Dialog-container {
+    max-width: 600px;
+  }
+
+  .form-list {
+    .form__input {
+      margin-bottom: 1rem;
+
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      .p-inputgroup {
+        display: flex;
+        gap: 0.5rem;
+      }
+    }
+
+    .p-divider {
+      margin: 1.5rem 0;
+    }
+
+    .note {
+      font-size: 12px;
+      color: #888;
+    }
+  }
+}
+/* 7.2.4.공통코드등록 H1024, BM-7204 */
+#CommonCodeEntry {
+  .CommonCodeEntry-con {
+    &__left {
+      width: 40%;
+    }
+    &__right {
+      width: 60%;
+    }
+    .datatable__header {
+      height: 3.125rem;
+    }
+    .datatable__body {
+      height: calc(100vh - 105px);
+    }
+    .datatable {
+      height: 100%;
+    }
+    .detail {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+    }
+    .con-header {
+      margin-bottom: 0;
+      height: 3.125rem;
+    }
+    .con-body {
+      height: calc(100vh - 105px);
+    }
+  }
+}
+
+#DeviceCodePage {
+  .p-tabview-panels {
+    height: calc(100vh - 112px);
+  }
+  .con-header {
+    height: 3.125rem;
+  }
+  .datatable__body {
+    height: calc(100vh - 202px);
+  }
+}
+/* 7.2.8.자동공정코드등록 H2001, BM-7208 */
+#AutoProcessCode {
+  .datatable__header {
+    height: 3.125rem;
+  }
+  .content-box {
+    height: calc(100vh - 9.6rem);
+  }
+}
+/* 7.2.6.절수이미지등록 H2010, BM-7206 */
+#CutImageEntry {
+  height: calc(100vh - 4.4rem);
+  display: flex;
+  gap: 1rem;
+  .CutImageEntry-left {
+    width: 380px;
+  }
+  .detail {
+    width: calc(100% - 380px);
+    .con-body {
+      height: calc(100vh - 100px);
+    }
+  }
+  .datatable {
+    height: calc(100vh - 230px);
+  }
+  .CutImageEntry-btns {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+  }
+  .p-galleria-item-container {
+    background-color: var(--gray-100);
+  }
+  .p-galleria .p-galleria-item-nav {
+    color: var(--gray-500);
+  }
+  .p-galleria-content {
+    gap: 0.5rem;
+  }
+  .p-galleria-item-wrapper {
+    height: calc(100vh - 372px);
+    .CutImageEntry-img {
+      height: 100%;
+    }
+  }
+  .CutImageEntry-img {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .p-galleria-thumbnail-container {
+    border-radius: 6px;
+  }
+  .p-galleria-thumbnail-item {
+    overflow: initial;
+  }
+  .CutImageEntry-thumbnail {
+    max-height: 120px;
+    max-width: 120px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+.CutImageEntryForm {
+  max-width: 62.5rem;
+  margin: 0 auto;
+  height: calc(100vh - 61px);
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  .Img-upload {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--blue-50);
+    padding: 32px;
+    margin: 24px 0;
+    text-align: center;
+    > div {
+      border-radius: 0.5rem;
+      border: 2px dashed var(--blue-300);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      padding: 1rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      i {
+        font-size: 2rem;
+        color: var(--blue-500);
+      }
+    }
+  }
+}
+#LaminateBilling {
+  .LaminateBilling-con {
+    display: flex;
+    gap: 1rem;
+  }
+  .datatable {
+    width: 30%;
+  }
+  .detail {
+    width: 40%;
+    .con-header {
+      margin-bottom: 0;
+      height: 3.125rem;
+    }
+    .con-header__title {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .con-body {
+      height: calc(100vh - 184px);
+    }
+  }
+}
+#FinanceClientPage {
+  .FinanceClient-con {
+    display: flex;
+  }
+  .datatable {
+    width: 43.75rem;
+  }
+  .detail {
+    background-color: #fff;
+    width: calc(100% - 44.375rem);
+    margin-top: 0.625rem;
+    margin-left: 0.625rem;
+    .con-header {
+      padding: 1.25rem;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+.FinanceClientForm,
+.CompanyEntryForm,
+.SiteEntryForm {
+  max-width: 62.5rem;
+  margin: 0 auto;
+
+  .p-card {
+    padding: 1rem;
+  }
+  .form-list .form__input label {
+    min-width: auto;
+  }
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  .form-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .column2 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+
+    > div {
+      flex: 0 0 auto;
+      width: 25rem;
+    }
+  }
+
+  .form__input {
+    p {
+      margin-bottom: 0.3rem;
+    }
+
+    .p-inputtext,
+    .p-dropdown {
+      width: 100%;
+    }
+
+    .p-calendar {
+      width: 100%;
+      flex: 1;
+    }
+
+    .calendar-checkbox-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .p-calendar {
+        min-width: 12.5rem;
+      }
+
+      .checkbox-wrapper {
+        display: flex;
+        align-items: center;
+        min-width: 5rem;
+        white-space: nowrap;
+      }
+    }
+
+    .p-inputtextarea {
+      width: 100%;
+      min-height: 9.375rem;
+    }
+
+    .p-error {
+      color: var(--red-500);
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+      display: block;
+    }
+
+    .p-dropdown-label {
+      padding: 0.5rem;
+    }
+
+    .p-dropdown.p-inputwrapper .p-inputtext {
+      line-height: 1.7;
+    }
+  }
+
+  .common-search__input {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 25rem;
+    .callList {
+      flex: 1;
+      padding: 0.5rem;
+      background-color: var(--gray-100);
+      border-radius: 0.25rem;
+      height: 2.375rem;
+      line-height: 1.5rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .p-button {
+      min-width: 5rem;
+      height: 2.375rem;
+    }
+  }
+
+  .Dialog__btns {
+    margin-top: 2rem;
+    padding-right: 1rem;
+
+    .p-button {
+      min-width: 5rem;
+      height: 2.375rem;
+    }
+  }
+}
+#MaterialEntryPage {
+  .datatable {
+    width: 100%;
+    height: 480px;
+  }
+  .p-highlight {
+    background-color: var(--blue-50);
+  }
+  .con-body {
+    width: 33.33%;
+  }
+}
+#machineManagerPage {
+  .color-blue {
+    color: var(--blue-500);
+  }
+  section {
+    width: 33.33%;
+  }
+  .detail {
+    .con-header {
+      height: 3.125rem;
+    }
+    .con-body__btn {
+      border-top: 1px solid var(--gray-200);
+      padding-top: 1rem;
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+}
+#CompanyEntryPage,
+#SiteEntryPage {
+  .CompanyEntry-con,
+  .SiteEntry-con {
+    display: flex;
+  }
+  .content-box {
+    height: calc(100vh - 4.4rem);
+  }
+  .datatable {
+    width: 43.75rem;
+    height: calc(100vh - 7.5rem);
+  }
+  .detail {
+    background-color: #fff;
+    width: calc(100% - 44.375rem);
+    margin-top: 0.625rem;
+    margin-left: 0.625rem;
+    .con-header {
+      padding: 1.25rem;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+#DeptEntryPage {
+  .DeptEntry-con {
+    display: flex;
+  }
+  .datatable {
+    width: 60rem;
+  }
+  .detail {
+    width: calc(100% - 60rem);
+    .con-header {
+      padding: 0 1.25rem;
+    }
+  }
+}
+#SystemConfigPage .content-box {
+  height: calc(100vh - 11.1rem);
+}
+#AccountTitlePage {
+  .AccountTitle-con {
+    display: flex;
+    gap: 1rem;
+  }
+  .form-con {
+    width: 300px;
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem;
+      p {
+        font-weight: bold;
+      }
+    }
+  }
+  .detail {
+    width: calc(100% - 300px);
+  }
+}
+#MgmtHistory {
+  .MgmtHistory-con {
+    display: flex;
+    gap: 1rem;
+    .datatable {
+      width: 500px;
+    }
+    .detail {
+      width: calc(100% - 500px);
+    }
+  }
+}
+#costEntryPage {
+  display: flex;
+  gap: 1rem;
+  height: 100%;
+
+  .costEntryPage__left {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .costEntryPage__right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .costEntryPage__topBtns {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .costEntryPage__tableAndDetail {
+    display: flex;
+    gap: 1rem;
+    .datatable {
+      flex: 1;
+    }
+    .detail {
+      flex: 0 0 250px;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      background: #fafafa;
+      min-width: 220px;
+    }
+  }
+  .con-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    .con-header__title {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+    .con-header__btns {
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+  .con-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

@@ -1,0 +1,97 @@
+div.ClaimStatusTab {
+  width: 100%;
+
+  .p-tabmenu-nav a {
+    justify-content: center;
+  }
+
+  li {
+    flex: 1;
+  }
+  .left-tabmenu {
+    flex: 0.125;
+
+    .p-tabmenu-nav {
+      height: 100%;
+    }
+  }
+
+  .right-tabmenu {
+    flex: 1;
+
+    li {
+      flex: 0.125;
+    }
+
+    .selected-tabmenu {
+      .p-tabmenu-nav {
+        border-bottom: none;
+
+        li {
+          width: 100%;
+          padding: 0.5rem;
+        }
+
+        input {
+          background-color: aliceblue;
+          border-bottom: none;
+          border-radius: 6px;
+          padding: 1rem;
+          border: none;
+          width: 40rem;
+        }
+      }
+    }
+  }
+}
+
+.p-tabview-panels {
+  background: #ffffff;
+  padding: 1.25rem;
+  border: 0 none;
+  color: #4b5563;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+
+  .p-selection-column {
+    .p-checkbox {
+      margin-left: 0.25rem;
+    }
+  }
+}
+
+.total-data {
+  position: absolute;
+  right: 0.6rem;
+  background: white;
+
+  .p-datatable-wrapper {
+    margin: 0.7rem 1.2rem 0;
+
+    th,
+    td {
+      min-width: 10rem;
+      max-width: 12.6rem;
+    }
+  }
+}
+
+.p-datatable {
+  .status-badge {
+    &.managed {
+      background-color: #e8f5fe;
+      color: #0066cc;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.875rem;
+    }
+  }
+
+  .text-right {
+    text-align: right;
+  }
+}
+
+.flex-1 {
+  flex: 1;
+}

@@ -1,0 +1,26 @@
+.print_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 110vh;
+  width: 100%;
+  background-color: grey;
+}
+
+.print_container > button {
+  position: fixed;
+  bottom: 1.875rem;
+  right: 1.875rem;
+}
+
+.print_paper {
+  min-height: 52.5625rem;
+  width: 37.1875rem;
+  margin: 1.875rem;
+  background-color: white;
+}
+
+.print_paper > .print_paper_content {
+  margin: 1.875rem;
+}

@@ -1,0 +1,75 @@
+#AuthEntry {
+  .AuthEntry-con {
+    display: flex;
+    .datatable {
+      width: 25rem;
+    }
+    .detail {
+      width: calc(100% - 25rem);
+      padding-top: 0.625rem;
+      padding-left: 0.625rem;
+      overflow-x: auto;
+
+      .p-datatable-wrapper {
+        overflow-x: auto;
+      }
+
+      .p-datatable-table {
+        min-width: 100%;
+      }
+
+      // DataTable 셀 스타일
+      .p-datatable-tbody > tr > td,
+      .p-datatable-thead > tr > th {
+        white-space: nowrap;
+      }
+
+      // 컬럼 너비 및 정렬
+      .column {
+        &-menu {
+          width: 9.375rem;
+          min-width: 9.375rem;
+        }
+        &-checkbox {
+          width: 4.375rem;
+          text-align: center;
+          min-width: 4.375rem;
+        }
+        &-special {
+          width: 4.375rem;
+          text-align: center;
+          min-width: 4.375rem;
+
+          .special__input {
+            input {
+              width: 3.125rem;
+              text-align: center;
+              min-width: 3.125rem;
+            }
+          }
+        }
+        &-remarks {
+          min-width: 25rem;
+
+          .p-inputtext {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .con-footer {
+    p {
+      margin: 0.625rem 0;
+      font-weight: 600;
+    }
+    div {
+      background: var(--surface-e);
+      border: 0.063rem var(--gray-300) solid;
+      border-radius: 0.375rem;
+      padding: 0.625rem;
+      white-space: nowrap;
+      overflow-x: auto;
+    }
+  }
+}

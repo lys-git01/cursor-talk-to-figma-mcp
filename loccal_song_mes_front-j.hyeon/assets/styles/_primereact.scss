@@ -1,0 +1,47 @@
+// 프라임리액트 수정
+.p-dropdown.p-inputwrapper {
+  height: 100%;
+  .p-inputtext {
+    line-height: 1.1;
+  }
+}
+.p-datatable-table {
+  .allRed {
+    color: red; /* 텍스트 색상을 빨강으로 */
+  }
+  .buttonSet {
+    display: flex;
+    gap: 0.625rem; // 10px
+  }
+}
+.p-toast {
+  z-index: 1000;
+}
+.p-button.p-button-sm {
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+}
+//  숫자 input은 전부 오른쪽 정렬
+.p-inputnumber .p-inputnumber-input {
+  text-align: right;
+  width: 100%;
+}
+.p-divider.p-divider-vertical {
+  padding: 1rem 0;
+}
+
+.p-tabview .p-tabview-panels {
+  color: #000;
+}
+.p-tabview .p-tabview-panels .con-body {
+  background: transparent;
+}
+.p-tag.p-component {
+  font-size: 12px;
+}
+.p-inputtextarea.p-inputtext.p-component {
+  width: 100%;
+}
+.p-dialog .p-dialog-content {
+  padding-bottom: 60px;
+}

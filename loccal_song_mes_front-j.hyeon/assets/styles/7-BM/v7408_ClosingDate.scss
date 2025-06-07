@@ -1,0 +1,157 @@
+#ClosingDate {
+  .ClosingDate-con {
+    display: flex;
+    height: calc(100vh - 4.4rem);
+
+    .datatable {
+      width: 55%;
+      height: calc(100vh - 8rem);
+    }
+    .detail {
+      width: calc(100% - 44.375rem);
+      margin-top: 0.625rem;
+      margin-left: 0.625rem;
+    }
+    .extension-num {
+      display: flex;
+      gap: 1rem;
+      > div {
+        display: flex;
+        gap: 0.625rem;
+        &:nth-child(2) p {
+          min-width: auto;
+        }
+      }
+    }
+    .tab2-meno {
+      border: 0.063rem var(--gray-300) solid;
+      padding: 0.625rem;
+      border-radius: 0.375rem;
+      line-height: 1.3;
+    }
+  }
+  .p-tabview {
+    height: 100%;
+  }
+  .p-tabview-panels {
+    height: calc(100% - 3.6rem);
+    overflow-y: auto;
+  }
+}
+.CreditEntryForm {
+  max-width: 62.5rem;
+  margin: 0 auto;
+
+  .p-card {
+    padding: 1rem;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  .form-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .column2 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+
+    > div {
+      flex: 0 0 auto;
+      width: 25rem;
+    }
+  }
+
+  .form__input {
+    p {
+      margin-bottom: 0.3rem;
+    }
+
+    .p-inputtext,
+    .p-dropdown {
+      width: 100%;
+    }
+
+    .p-calendar {
+      width: 100%;
+      flex: 1;
+    }
+
+    .calendar-checkbox-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .p-calendar {
+        min-width: 12.5rem;
+      }
+
+      .checkbox-wrapper {
+        display: flex;
+        align-items: center;
+        min-width: 5rem;
+        white-space: nowrap;
+      }
+    }
+
+    .p-inputtextarea {
+      width: 100%;
+      min-height: 9.375rem;
+    }
+
+    .p-error {
+      color: var(--red-500);
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+      display: block;
+    }
+
+    .p-dropdown-label {
+      padding: 0.5rem;
+    }
+
+    .p-dropdown.p-inputwrapper .p-inputtext {
+      line-height: 1.7;
+    }
+  }
+
+  .common-search__input {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 25rem;
+    .callList {
+      flex: 1;
+      padding: 0.5rem;
+      background-color: var(--gray-100);
+      border-radius: 0.25rem;
+      height: 2.375rem;
+      line-height: 1.5rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .p-button {
+      min-width: 5rem;
+      height: 2.375rem;
+    }
+  }
+
+  .Dialog__btns {
+    margin-top: 2rem;
+    padding-right: 1rem;
+
+    .p-button {
+      min-width: 5rem;
+      height: 2.375rem;
+    }
+  }
+}

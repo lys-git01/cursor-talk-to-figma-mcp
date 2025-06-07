@@ -1,0 +1,26 @@
+/* 7.2.2.공정코드등록 H1013, BM-7202 */
+#ProcessCodeEntry {
+  .ProcessCodeEntry-con {
+    .con-header {
+      margin-bottom: 0;
+      height: 3.125rem;
+    }
+    .datatable__body {
+      height: calc(100vh - 8rem);
+    }
+    .detail {
+      display: flex;
+      flex-direction: column;
+      height: calc(100vh - 4.375rem);
+      > div {
+        height: 50%;
+      }
+      .con-body {
+        height: calc(100% - 3.125rem);
+      }
+      .datatable__body {
+        height: calc(100% - 3.125rem);
+      }
+    }
+  }
+}
